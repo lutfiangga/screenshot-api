@@ -10,10 +10,10 @@ API sederhana untuk mengambil tangkapan layar (screenshot) dari sebuah halaman w
 ## 🛠️ Cara Menggunakan
 
 ### Endpoint Utama
-**`GET /url={link_website}`**
+**`GET /screenshot?url={link_website}`**
 
 #### 📥 Request
-- **URL**: `http://localhost:3000/url={link_website}`
+- **URL**: `http://localhost:3000/screenshot?url={link_website}`
 - **Method**: `GET`
 - **Parameter**:
   - `url` *(required)*: URL halaman web yang ingin diambil tangkapan layarnya. URL harus valid dan di-encode menggunakan `encodeURIComponent`.
@@ -33,7 +33,7 @@ API sederhana untuk mengambil tangkapan layar (screenshot) dari sebuah halaman w
 ### Permintaan (Request)
 **HTTP GET:**
 ```bash
-curl "http://localhost:3000/url=website_yang_di_screenshot"
+curl "http://localhost:3000/screenshot?url=website_yang_di_screenshot"
 ```
 
 ### Response
@@ -69,7 +69,7 @@ API akan berjalan pada `http://localhost:3000`
 - **Akses API**
 Setelah server berjalan, Anda dapat mengakses API menggunakan GET dengan parameter url yang di-encode.
 ```bash
-curl "http://localhost:3000/url=https%3A%2F%2Fgoogle.com"
+curl "http://localhost:3000/screenshot?url=https%3A%2F%2Fgoogle.com"
 ```
 
 ---
