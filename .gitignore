@@ -1,0 +1,29 @@
+# Mengabaikan folder node_modules
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Direktori build dan distribusi
+dist/
+build/
+
+# Lingkungan
+.git/
+.env
+.env.local
+.env.*.local
+
+# Editor terkait
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
