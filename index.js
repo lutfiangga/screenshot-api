@@ -10,7 +10,10 @@ app.get("/screenshot", async (req, res) => {
   const { url } = req.query;
   !url && res.status(400).send("URL is Required");
   try {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+      headless: true,
+      executablePath:"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    });
     const page = await browser.newPage();
 
     await page.goto(url, { waitUntil: "networkidle2" });
