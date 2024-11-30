@@ -12,7 +12,6 @@ app.get("/screenshot", async (req, res) => {
   try {
     const browser = await puppeteer.launch({
       headless: true,
-      executablePath:"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     });
     const page = await browser.newPage();
 
